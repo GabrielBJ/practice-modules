@@ -1,10 +1,26 @@
 #!/usr/bin/ python3
-import numpy as np
-import pandas as pd
 
-def my_function(b):
-    a = np.cos(b) + 1
+def print_message(msg):
+    """
+    This function prints a message
+    """
+    print("Hello, " + msg)
+
+
+def print_message2(msg):
+    """
+    Print the string msg provided by the user
+    Input: msg (string)
+    Output: print statement
+    """
+    print("Hello, " + msg)
+
+# Dictionary
+physics_courses = {
+    "level": "BSc",
+    "course": "electrodynamics II",
+    "semester": 5,
+    "programme": "physics/nanotechnology"
+}
     
-    return a
-
-
+    

@@ -3,6 +3,7 @@
 import numpy as np
 import matplotlib
 import matplotlib.pyplot as plt
+import matplotlib.animation as FuncAnimation
 matplotlib.use('TkAgg')
 
 def transform_1(x, y):
@@ -32,5 +33,6 @@ for _ in range(points):
     y_list.append(y)
 
 plt.figure(figsize=(10, 8))
-plt.scatter(x_list, y_list, s=0.2, edgecolor='green', color='green')
+plt.scatter(x_list, y_list, s=0.1, edgecolor='green', color='green')
+plt.pause(0.001)
 plt.show()
