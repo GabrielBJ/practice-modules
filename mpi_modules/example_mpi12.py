@@ -24,3 +24,5 @@ sample_dict = world_comm.bcast(sample_dict, root = 0)
 
 # Printing the data info
 print("Rank: ", my_rank, sample_dict)
+
+# Now lets create a new function 
