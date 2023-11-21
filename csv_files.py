@@ -33,3 +33,5 @@ for row in reader:
 
 for i in shopping_list:
     print ("item: {}, quantity: {}, unit price: {}, total: {}".format(i.name, i.quantity, i.unitprice, i.total))
+
+
