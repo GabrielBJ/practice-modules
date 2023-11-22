@@ -34,3 +34,9 @@ midtermpart2.tar
 ## Using the module as a script 
 
 Download the `midtermpart2.tar` file. Uncompress it and copy the `odekepler` folder to your working directory.
+
+Open in Terminal an run:
+```
+cd ~/path_to_module/odekepler/odekepler/
+```
+this will place you in the directory where the `kepler.py` file is placed.
