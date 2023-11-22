@@ -106,3 +106,8 @@ If you want to analyse the convergence of the RK methods, you can use the follow
 rk3_r = kp.orbit_error(*rk3_orbits)
 ```
 this function receives multiple orbits integrated with the same method `RK2, RK3, RK4` with period 1, but using different time step. It will return the radius of the orbit after a T=1, so you can see how the precision of the methods varies as the time step changes. 
+
+## Usage Examples 
+You can find examples and the documentation of the methods used here in the `helpfolder`
+
+### Good luck!
