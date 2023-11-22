@@ -59,4 +59,38 @@ python kepler.py -e 0.25 -T 1 -m RK4 -s "./intial_map.png" -sg "./animation.gif"
 ```
 This example will generate the simulation for the Pluto eccentricity using the RK4 method. Then, it will save the initial map in the `"./intial_map.png"` directory,  and the animation in the `"./animation.gif"` directory.
 
-It will also generate a file called `RK4_integrated_orbit.txt`
+It will also generate a file called `RK4_integrated_orbit.txt`, which is saved in the current directory. 
+
+## Importing the module
+You can also import the module in a python notebook for example. 
+
+### Installation
+For this, download the `midtermpart2.tar` file. Open the file, and go to the `odekepler` folder, which contains the `setup.py` file. 
+Then, in Terminal run:
+```
+python setup.py install --user
+```
+Now, you are ready to use the `odekepler` module 
+
+### Example:
+Import the module: 
+```python
+import odekpler.kepler as kp
+```
+initialising a system for e = 0.01671 (Earth's eccentricity) for a period of T=1 year
+```python
+system = kp.initialise_system(0.01671, 1, './eart_intial_system.png')
+```
+this will initialise a system with the initial conditions. Now, you can pass this system to one of the three integrators to get the Earth's orbit. : 
+
+```python
+orbit = earth_orbit = kp.RKIntegrate.RK2(earth_system, 1., "./earth_orbit.txt")
+```
+this will return the integrated orbit of the Earth. Now you can use this orbit to generate an animation using the following function:
+
+```python
+animation = kp.animation_orbit(orbit, 0.01671, "./earth_orbit.gif")
+```
+This will generate a gif file containing the simulation.
+
+
