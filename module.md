@@ -93,4 +93,16 @@ animation = kp.animation_orbit(orbit, 0.01671, "./earth_orbit.gif")
 ```
 This will generate a gif file containing the simulation.
 
+The module also include a function to get the time array, given the period T and the time step
 
+```python
+time = kp.time_array(T, time_step)
+```
+it will be useful if you want to generate plots vs. time. 
+
+If you want to analyse the convergence of the RK methods, you can use the following function:
+
+```python
+rk3_r = kp.orbit_error(*rk3_orbits)
+```
+this function receives multiple orbits integrated with the same method `RK2, RK3, RK4` with period 1, but using different time step. It will return the radius of the orbit after a T=1, so you can see how the precision of the methods varies as the time step changes. 
