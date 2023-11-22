@@ -40,3 +40,16 @@ Open in Terminal an run:
 cd ~/path_to_module/odekepler/odekepler/
 ```
 this will place you in the directory where the `kepler.py` file is placed.
+
+Now, you are ready to use the `kepler.py` module as a script: 
+```
+python kepler.py -e  -T  -m  -s  -sg
+```
+here,
+```
+-e -> this flag takes as input the eccentricity of the orbit.
+-T -> this flag takes as input the period in years.
+-m -> this flag takes as input the method to perform the integration (RK2, RK3, RK4)
+-s -> this flag takes as input the directory to save the initial map
+-sg -> this flag takes as input the directory to save the gif animation of the orbit
+```
