@@ -30,3 +30,7 @@ midtermpart2.tar
     └── README.md
    
 ```
+
+## Using the module as a script 
+
+Download the `midtermpart2.tar` file. Uncompress it and copy the `odekepler` folder to your working directory.
