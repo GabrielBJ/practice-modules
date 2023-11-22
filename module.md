@@ -53,3 +53,10 @@ here,
 -s -> this flag takes as input the directory to save the initial map
 -sg -> this flag takes as input the directory to save the gif animation of the orbit
 ```
+### Example:
+```
+python kepler.py -e 0.25 -T 1 -m RK4 -s "./intial_map.png" -sg "./animation.gif"
+```
+This example will generate the simulation for the Pluto eccentricity using the RK4 method. Then, it will save the initial map in the `"./intial_map.png"` directory,  and the animation in the `"./animation.gif"` directory.
+
+It will also generate a file called `RK4_integrated_orbit.txt`
